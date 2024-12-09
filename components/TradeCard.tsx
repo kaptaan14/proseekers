@@ -4,7 +4,7 @@ import { MdOutlineReport } from "react-icons/md";
 
 const TradeCard = () => {
   return (
-    <div className="border flex flex-col gap-4 cursor-pointer border-gray-100 hover:shadow-xl transition-all duration-700 px-4 pt-4 pb-1 rounded-2xl min-w-[550px]">
+    <div className="border flex flex-col gap-4 cursor-pointer border-gray-100 hover:shadow-xl w-full transition-all duration-700 px-4 pt-4 pb-1 rounded-2xl ">
       <div className="flex flex-row justify-between">
         <div className="flex flex-row gap-3 text-start items-start">
           {/* Project Image  */}
@@ -42,10 +42,10 @@ const TradeCard = () => {
         <FaRegBookmark size={20} />
       </div>
       <div className="flex flex-row gap-3">
-        <button className="bg-blue-200 text-white px-3 py-2 rounded-full  w-full">
+        <button className="bg-blue-200 text-white px-0 sm:px-3 py-2 rounded-full  hover:shadow-lg hover:shadow-blue-200 transition-all duration-500  w-full">
           Negotiate
         </button>
-        <button className="bg-green-400 text-white px-3 py-2 rounded-full  w-full">
+        <button className="bg-green-400 text-white px-0 sm:px-3 py-2 rounded-full hover:shadow-lg hover:shadow-green-400 transition-all duration-500 w-full">
           Accept Trade
         </button>
       </div>
