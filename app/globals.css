@@ -22,3 +22,9 @@ body {
   background: var(--background);
   font-family: "Jost", sans-serif;
 }
+
+.scroll-container::-webkit-scrollbar {
+  width: 0; /* Slightly visible width */
+  height: 0; /* For horizontal scrollbar */
+}
+

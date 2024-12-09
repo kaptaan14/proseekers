@@ -12,7 +12,7 @@ const page = () => {
         <div className="pb-1 cursor-pointer">Saved</div>
         <div className="pb-1 cursor-pointer">Hidden</div>
       </div>
-      <div className="flex flex-wrap justify-between gap-8">
+      <div className="flex flex-wrap gap-1">
         <TradeCard />
         <TradeCard />
         <TradeCard />

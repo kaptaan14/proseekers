@@ -7,10 +7,10 @@ import { usePathname } from "next/navigation";
 const SideNavbar = () => {
   const pathname = usePathname();
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-row sm:flex-col w-screen sm:w-full sm:gap-2 justify-between px-1 sm:px-0">
       <Link href="/home">
         <div
-          className={`flex flex-col items-center justify-center text-center gap-2 px-7 py-2 rounded-lg ${
+          className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
             pathname === "/home"
               ? "text-blue-500 bg-blue-50"
               : "text-gray-200 hover:bg-blue-50"
@@ -34,7 +34,7 @@ const SideNavbar = () => {
 
       <Link href="/profile">
         <div
-          className={`flex flex-col items-center justify-center text-center gap-2 px-7 py-2 rounded-lg ${
+          className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
             pathname === "/profile"
               ? "text-blue-500 bg-blue-50"
               : "text-gray-200 hover:bg-blue-50"
@@ -63,7 +63,7 @@ const SideNavbar = () => {
 
       <Link href="/projects">
         <div
-          className={`flex flex-col items-center justify-center text-center gap-2 px-7 py-2 rounded-lg ${
+          className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
             pathname === "/projects"
               ? "text-blue-500 bg-blue-50"
               : "text-gray-200 hover:bg-blue-50"
@@ -99,7 +99,7 @@ const SideNavbar = () => {
 
       <Link href="/messages">
         <div
-          className={`flex flex-col items-center justify-center text-center gap-2 px-7 py-2 rounded-lg ${
+          className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
             pathname === "/messages"
               ? "text-blue-500 bg-blue-50"
               : "text-gray-200 hover:bg-blue-50"
