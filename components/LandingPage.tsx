@@ -7,7 +7,7 @@ const LandingPage = () => {
     <div className="text-center flex flex-col gap-6 ">
       <div>
         <h1 className="font-bold text-2xl cursor-pointer">
-          proseekers<span className="text-red-500">:</span>
+          proseekers<span className="text-red-500 center">:</span>
         </h1>
       </div>
       <h1 className="text-3xl sm:text-5xl font-bold leading-snug ">
