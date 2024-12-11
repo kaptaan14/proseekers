@@ -8,7 +8,7 @@ const page = () => {
     <div className="mb-20 sm:mb-10 ">
       {/* <HomeComponents /> */}
       <div>
-        <h1 className="pb-5 font-bold">Recommended projects for you</h1>
+        <h1 className="pb-5 font-bold">Recommended Projects for you</h1>
         <div className="flex flex-col gap-5">
           <ProjectCard />
           <ProjectCard />
