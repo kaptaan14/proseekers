@@ -4,8 +4,6 @@ import { FaGithub } from "react-icons/fa";
 import { auth, signIn, signOut } from "@/auth";
 
 export default async function SignIn() {
-  const session = await auth();
-
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center  px-6 py-12 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col items-center justify-center">

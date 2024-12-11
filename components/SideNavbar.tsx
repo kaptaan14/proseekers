@@ -64,7 +64,7 @@ const SideNavbar = () => {
       <Link href="/projects">
         <div
           className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
-            pathname === "/projects"
+            pathname.startsWith("/projects") 
               ? "text-blue-500 bg-blue-50"
               : "text-gray-200 hover:bg-blue-50"
           }`}
@@ -100,7 +100,7 @@ const SideNavbar = () => {
       <Link href="/messages">
         <div
           className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
-            pathname === "/messages"
+            pathname.startsWith("/messages") 
               ? "text-blue-500 bg-blue-50"
               : "text-gray-200 hover:bg-blue-50"
           }`}

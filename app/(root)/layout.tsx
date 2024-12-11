@@ -21,7 +21,7 @@ const layout = async ({ children }: { children: React.ReactNode }) => {
         </div>
 
         <div className="flex-1 flex justify-start">
-          <div className="w-full max-w-6xl px-2 sm:px-0 ">{children}</div>
+          <div className="w-full max-w-5xl px-2 ">{children}</div>
         </div>
       </div>
     </div>
