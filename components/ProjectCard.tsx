@@ -16,7 +16,7 @@ const ProjectCard = () => {
   };
 
   return (
-    <div className="border  border-gray-100 hover:shadow-xl  transition-all duration-700 pt-5 px-5 pb-2 rounded-2xl">
+    <div className="border hover:scale-[1.02] hover:shadow-sm border-gray-100 bg-white  transition-all duration-700 pt-5 px-5 pb-2 rounded-2xl">
       <div className="flex group flex-row gap-3 text-start items-center justify-start">
         {/* Project Image  */}
         <div className="border w-20 h-20 border-gray-100  rounded-2xl p-2 overflow-hidden cursor-pointer">

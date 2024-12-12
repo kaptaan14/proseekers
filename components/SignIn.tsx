@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { auth, signIn, signOut } from "@/auth";
+import Link from "next/link";
 
 export default async function SignIn() {
   return (
@@ -43,12 +44,12 @@ export default async function SignIn() {
                 Password
               </label>
               <div className="text-sm">
-                <a
-                  href="#"
+                <Link
+                  href={'#'}
                   className="font-semibold text-indigo-600 hover:text-indigo-500"
                 >
                   Forgot password?
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mt-2">
@@ -104,12 +105,12 @@ export default async function SignIn() {
         </div>
         <p className="mt-10 text-center text-sm/6 text-gray-500">
           Not a member?{" "}
-          <a
-            href="/signup"
+          <Link
+            href={'/signup'}
             className="font-semibold text-indigo-600 hover:text-indigo-500"
           >
             Signup Now
-          </a>
+          </Link>
         </p>
       </div>
     </div>

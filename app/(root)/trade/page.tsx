@@ -3,8 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="flex flex-wrap gap-1">
-      <TradeCard />
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
       <TradeCard />
       <TradeCard />
       <TradeCard />

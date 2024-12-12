@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 
@@ -116,12 +117,12 @@ export default async function SignUp() {
         </div>
         <p className="mt-10 text-center text-sm/6 text-gray-500">
           Already have an account?{"  "}
-          <a
-            href="/login"
+          <Link
+            href={"/login"}
             className="font-semibold text-indigo-600 hover:text-indigo-500"
           >
             Login
-          </a>
+          </Link>
         </p>
       </div>
     </div>

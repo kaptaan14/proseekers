@@ -4,8 +4,8 @@ import Button from "./Button";
 const HomeComponents = () => {
   return (
     <>
-      <div className="flex flex-row gap-4">
-        <div className="border flex flex-row items-center justify-between gap-10 cursor-pointer p-4 border-gray-100 hover:shadow-xl  transition-all duration-700  rounded-2xl ">
+      <div className="flex flex-row gap-4 mb-10">
+        <div className="border w-7/12 hidden sm:flex flex-row items-center justify-between gap-10 cursor-pointer p-4 border-gray-100 hover:shadow-xl  transition-all duration-700  rounded-2xl ">
           <div className="flex flex-col gap-3">
             <div>
               <h1 className="font-semibold text-xl">Welcome to Proseekers</h1>
@@ -26,7 +26,7 @@ const HomeComponents = () => {
           <img className="w-40 h-40" src="/hands.svg" alt="" />
         </div>
 
-        <div className="border flex flex-row items-center justify-between cursor-pointer p-4 border-gray-100 hover:shadow-xl  transition-all duration-700 rounded-2xl ">
+        <div className="border w-full sm:w-5/12 flex flex-row items-center justify-between cursor-pointer p-4 border-gray-100 hover:shadow-xl  transition-all duration-700 rounded-2xl ">
           <div className="flex flex-col gap-3">
             <div>
               <h1 className="font-semibold text-xl">Trade your skills</h1>
@@ -45,7 +45,7 @@ const HomeComponents = () => {
 
           <img className="w-40 h-40" src="/klop.svg" alt="" />
         </div>
-
+{/* 
         <div className="border border-gray-100 rounded-2xl p-5">
           <div className="flex flex-row gap-2 pb-2">
             <div className="bg-blue-200 w-12 h-12 rounded-full border overflow-hidden p-1 flex flex-row">
@@ -72,7 +72,7 @@ const HomeComponents = () => {
             </div>
           </div>
           <hr />
-        </div>
+        </div> */}
       </div>
     </>
   );
