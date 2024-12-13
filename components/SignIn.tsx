@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default async function SignIn() {
   return (
-    <div className="flex min-h-full flex-1 flex-col justify-center  px-6 py-12 lg:px-8">
+    <div className="flex  min-h-screen flex-1 flex-col justify-center  px-6 py-12 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col items-center justify-center">
         <h1 className="font-bold text-2xl">
           proseekers<span className="text-red-500">:</span>
@@ -45,7 +45,7 @@ export default async function SignIn() {
               </label>
               <div className="text-sm">
                 <Link
-                  href={'#'}
+                  href={"#"}
                   className="font-semibold text-indigo-600 hover:text-indigo-500"
                 >
                   Forgot password?
@@ -106,7 +106,7 @@ export default async function SignIn() {
         <p className="mt-10 text-center text-sm/6 text-gray-500">
           Not a member?{" "}
           <Link
-            href={'/signup'}
+            href={"/signup"}
             className="font-semibold text-indigo-600 hover:text-indigo-500"
           >
             Signup Now

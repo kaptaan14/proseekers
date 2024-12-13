@@ -7,6 +7,7 @@ import { MdDelete } from "react-icons/md";
 import { FaRegBookmark } from "react-icons/fa6";
 import { FaBookmark } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 const ProjectCard = () => {
   const [save, setSave] = React.useState(false);

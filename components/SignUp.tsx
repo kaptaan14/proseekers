@@ -4,7 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 
 export default async function SignUp() {
   return (
-    <div className="flex min-h-full   flex-col justify-center px-6 py-12 lg:px-8">
+    <div className="flex   min-h-screen   flex-col justify-center px-6 py-12 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col items-center justify-center">
         <h1 className="font-bold text-2xl">
           proseekers<span className="text-red-500">:</span>

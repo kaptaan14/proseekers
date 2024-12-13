@@ -16,7 +16,7 @@ const layout = async ({ children }: { children: React.ReactNode }) => {
       <NavbarLogin />
 
       <div className="flex flex-row gap-20">
-        <div className="sm:sticky sm:top-0  sm:h-screen p-1 sm:p-0 fixed bottom-0">
+        <div className="sm:sticky bg-white sm:bg-transparent sm:top-0  sm:h-screen p-1 sm:p-0 fixed bottom-0">
           <SideNavbar />
         </div>
 
