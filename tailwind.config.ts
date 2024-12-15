@@ -23,6 +23,7 @@ export default {
           100: '#9AFFE7'
         }
       },
+      overflow: ["no-scroll"],
     },
   },
   plugins: [],
