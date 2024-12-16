@@ -25,24 +25,6 @@ const LandingPage = () => {
       <Link href={"/signup"}>
         <Button bgBlack={true}>Join Community</Button>
       </Link>
-
-      <div className="flex flex-row text-start mt-72 ">
-        <div className="flex flex-col w-3/5 justify between">
-          <h1 className="text-5xl font-bold">
-            Discover a project that aligns with your skills and begin your
-            journey
-          </h1>
-          <p>
-            Find a project that aligns with your expertise and start building
-            it. By concentrating on an area where you excel, you'll enhance your
-            skills and gain practical experience. Take the first step and
-            kickstart your journey now.
-          </p>
-        </div>
-        <div className="w-2/5">
-          <img src="/posts.svg" alt="" />
-        </div>
-      </div>
     </div>
   );
 };

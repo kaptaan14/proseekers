@@ -24,7 +24,9 @@ body {
 }
 
 .scroll-container::-webkit-scrollbar {
-  width: 0; /* Slightly visible width */
-  height: 0; /* For horizontal scrollbar */
+  width: 6px; /* Slightly visible width */
+  height: 6px; /* For horizontal scrollbar */
 }
+
+
 

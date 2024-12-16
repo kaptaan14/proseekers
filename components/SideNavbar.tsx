@@ -7,12 +7,12 @@ import { usePathname } from "next/navigation";
 const SideNavbar = () => {
   const pathname = usePathname();
   return (
-    <div className="flex flex-row sm:flex-col w-screen sm:w-full sm:gap-2 justify-between px-1 sm:px-0">
-      <Link href="/home">
+    <div className=" grid grid-cols-5 sm:flex fixed bg-white sm:bg-transparent items-center  bottom-0 flex-col  justify-start min-w-0 pt-1 px-1 sm:pt-10 sm:sticky sm:h-[calc(100vh-64px)] gap-2 w-full sm:top-0 ">
+      <Link className="w-full" href="/home">
         <div
-          className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
+          className={`flex flex-col items-center  justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
             pathname === "/home"
-              ? "text-blue-500 bg-blue-50"
+              ? "text-blue-500 bg-blue-50 border border-blue-500"
               : "text-gray-200 hover:bg-blue-50"
           }`}
         >
@@ -32,11 +32,11 @@ const SideNavbar = () => {
         </div>
       </Link>
 
-      <Link href="/profile">
-        <div
-          className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
+      <Link className="w-full" href="/profile">
+        <button
+          className={`flex flex-col items-center justify-center text-center w-full gap-2 py-2 rounded-lg ${
             pathname === "/profile"
-              ? "text-blue-500 bg-blue-50"
+              ? "text-blue-500 bg-blue-50 border border-blue-500"
               : "text-gray-200 hover:bg-blue-50"
           }`}
         >
@@ -58,14 +58,14 @@ const SideNavbar = () => {
           </svg>
 
           <p className="text-sm leading-none">Profile</p>
-        </div>
+        </button>
       </Link>
 
-      <Link href="/projects">
+      <Link className="w-full" href="/projects">
         <div
           className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
-            pathname.startsWith("/projects") 
-              ? "text-blue-500 bg-blue-50"
+            pathname.startsWith("/projects")
+              ? "text-blue-500 bg-blue-50 border border-blue-500"
               : "text-gray-200 hover:bg-blue-50"
           }`}
         >
@@ -97,11 +97,11 @@ const SideNavbar = () => {
         </div>
       </Link>
 
-      <Link href="/messages">
+      <Link className="w-full" href="/messages">
         <div
           className={`flex flex-col items-center justify-center text-center gap-2 px-4 sm:px-7 py-2 rounded-lg ${
-            pathname.startsWith("/messages") 
-              ? "text-blue-500 bg-blue-50"
+            pathname.startsWith("/messages")
+              ? "text-blue-500 bg-blue-50 border border-blue-500"
               : "text-gray-200 hover:bg-blue-50"
           }`}
         >
@@ -116,11 +116,11 @@ const SideNavbar = () => {
         </div>
       </Link>
 
-      <Link href="/trade">
+      <Link className="w-full" href="/trade">
         <div
           className={`flex flex-col items-center justify-center text-center gap-2 px-7 py-2 rounded-lg ${
             pathname === "/trade"
-              ? "text-blue-500 bg-blue-50"
+              ? "text-blue-500 bg-blue-50 border border-blue-500"
               : "text-gray-200 hover:bg-blue-50"
           }`}
         >

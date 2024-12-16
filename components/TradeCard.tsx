@@ -4,7 +4,7 @@ import { MdOutlineReport } from "react-icons/md";
 
 const TradeCard = () => {
   return (
-    <div className="border w-full flex flex-col gap-4 cursor-pointer border-gray-100 hover:shadow-xl transition-all duration-700 px-4 pt-4 pb-1 rounded-2xl ">
+    <div className="border w-full flex flex-col gap-4 cursor-pointer bg-white border-gray-100 hover:shadow-xl transition-all duration-700 px-4 pt-4 pb-1 rounded-md border-b-[3px] ">
       <div className="flex flex-row justify-between">
         <div className="flex flex-row gap-3 text-start items-start">
           {/* Project Image  */}
