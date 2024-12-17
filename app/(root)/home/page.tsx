@@ -1,4 +1,3 @@
-import HomeComponents from "@/components/HomeComponents";
 import ProjectCard from "@/components/ProjectCard";
 import TradeCard from "@/components/TradeCard";
 import React from "react";
@@ -6,7 +5,6 @@ import React from "react";
 const page = () => {
   return (
     <div className="mb-20 sm:mb-10 ">
-      <HomeComponents />
       <div>
         <h1 className="pb-5 font-bold">Recommended Projects for you</h1>
         <div className="flex flex-col gap-5">

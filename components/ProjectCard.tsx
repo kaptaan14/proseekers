@@ -1,25 +1,29 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SkillDiv from "./SkillDiv";
 import { IoIosArrowForward } from "react-icons/io";
 import ProjectView from "./ProjectView";
 import { IoMdClose } from "react-icons/io";
-import SaveDelete from "./SaveDelete";
+import Link from "next/link";
 
 const ProjectCard = () => {
   const [open, setOpen] = React.useState(false);
+
+  const [saved, setSaved] = useState(false);
 
   const toggleOpen = () => {
     setOpen(!open);
   };
 
+  const toggleSave = () => {
+    setSaved(!saved);
+  };
+
   return (
     <div>
       <div
-        className={`border ${
-          open ? "hidden" : ""
-        } border-b-[3px] rounded-md border-gray-100 bg-white transition-all duration-700 pt-5 px-5 pb-2 `}
+        className={`border border-b-[3px] rounded-md border-gray-100 bg-white transition-all duration-700 pt-5 px-5 pb-2 `}
       >
         <div
           onClick={toggleOpen}
@@ -52,7 +56,7 @@ const ProjectCard = () => {
               </p>
             </div>
             <div>
-              <p className="text-gray-200 italic">Unpaid</p>
+              <p className="text-gray-200 italic">Posted Yesterday</p>
             </div>
           </div>
         </div>
@@ -65,6 +69,28 @@ const ProjectCard = () => {
           <SkillDiv>NextJS</SkillDiv>
         </div>
 
+        <div className="flex flex-row justify-between py-2 px-4 my-2 border border-gray-100">
+          <div className="flex flex-row items-center gap-4">
+            <h1 className="font-semibold">Frontend Engineer Vella hai</h1>
+            <div className="flex flex-row items-center gap-1">
+              <p className="text-gray-200 text-sm">₹20000 - ₹50000</p>
+              <p className="text-gray-200 ">⦁</p>
+              <p className="text-gray-200 text-sm">No equity</p>
+            </div>
+          </div>
+          <div className="flex flex-row gap-3">
+            <button
+              onClick={toggleSave}
+              className="border font-semibold hover:border-blue-200 hover:bg-blue-100 rounded-md py-1 text-sm px-2"
+            >
+              {saved ? "Save" : "Remove"}
+            </button>
+            <Link href={'/projects/project/23'} className="border font-semibold hover:border-blue-200 hover:bg-blue-200 bg-black text-white rounded-md py-1 text-sm px-2">
+              Apply
+            </Link>
+          </div>
+        </div>
+
         <div className="mt-5 text-gray-200 flex flex-row justify-between">
           <div>
             <p>
@@ -74,7 +100,6 @@ const ProjectCard = () => {
               </span>{" "}
             </p>
           </div>
-          <SaveDelete />
         </div>
       </div>
       {/* block h-full max-h-full w-full max-w-full left-0 right-0 bottom-0 transform-none */}

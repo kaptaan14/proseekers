@@ -11,7 +11,7 @@ const NavbarLogin = async () => {
   const imgUrl = session?.user?.image || undefined;
 
   return (
-    <div className="flex  bg-white shadow-sm flex-row items-center justify-between relative px-2 sm:px-10 py-3  border-b border-gray-100">
+    <div className="flex  bg-white  shadow-sm flex-row items-center justify-between relative px-2 sm:px-10 py-3  border-b border-gray-100">
       <div>
         <h1 className="font-bold text-2xl cursor-pointer">
           <Link href="/">

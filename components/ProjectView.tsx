@@ -28,7 +28,7 @@ const ProjectView = () => {
           <button className="hover:bg-gray-50 py-0 px-2 my-1">Share</button>
           <button className="flex transition-all duration-300 hover:border-blue-200 hover:bg-blue-100 flex-row items-center justify-center gap-2   border px-4 py-1.5 rounded-lg">
             <GoPlus />
-            <h1>Join</h1>
+            <h1>Apply</h1>
           </button>
         </div>
       </div>
@@ -40,7 +40,7 @@ const ProjectView = () => {
         <SkillDiv>NextJS</SkillDiv>
       </div>
       <button className="flex sm:hidden mt-10 w-full hover:border-blue-200 hover:bg-blue-100 flex-row items-center justify-center gap-2   border px-4 py-1.5 rounded-lg">
-        <h1>Join</h1>
+        <h1>Apply</h1>
       </button>
 
       <div>

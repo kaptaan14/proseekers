@@ -1,5 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import Profile from "@/public/profile.png";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -8,7 +10,7 @@ const page = () => {
       <div className="mb-10 border border-gray-100 min-h-screen rounded-xl p-5">
         <div className="flex flex-row gap-2 items-center">
           <div className="overflow-hidden w-12 h-12 bg-blue-200 flex items-center justify-center p-1 rounded-full">
-            <img className="" src="/profile.png" alt="" />
+            <Image objectFit="cover" src={Profile} alt="" />
           </div>
           <div className="flex flex-row justify-between w-full">
             <div>
