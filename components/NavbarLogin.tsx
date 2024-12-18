@@ -5,10 +5,12 @@ import { IoMdAddCircle } from "react-icons/io";
 import Link from "next/link";
 import { IoIosLogOut } from "react-icons/io";
 import { auth, signOut } from "../auth";
+import Image from "next/image";
+import Profile from "@/public/profile.png";
 
 const NavbarLogin = async () => {
   const session = await auth();
-  const imgUrl = session?.user?.image || undefined;
+  const imgUrl = session?.user?.image || Profile;
 
   return (
     <div className="flex  bg-white  shadow-sm flex-row items-center justify-between relative px-2 sm:px-10 py-3  border-b border-gray-100">
@@ -51,11 +53,17 @@ const NavbarLogin = async () => {
           </div>
         </div>
         <div className="relative group">
-          <div className="border w-9 h-9 rounded-full cursor-pointer overflow-hidden">
-            <Link href={"/profile"}>
-              <img src={imgUrl} alt="User avatar" />
-            </Link>
-          </div>
+          <Link href={"/profile"}>
+            <div className="border w-9 h-9 rounded-full cursor-pointer overflow-hidden">
+              <Image
+                className="rounded-full w-9 h-9"
+                src={imgUrl}
+                alt="User profile picture"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </Link>
           <div className="absolute top-10 right-0 sm:-right-2/3 w-32 bg-black backdrop-blur-sm p-2 rounded shadow-lg invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 z-10">
             <Link
               href="/profile"

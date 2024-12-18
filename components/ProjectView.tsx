@@ -2,6 +2,8 @@ import React from "react";
 import SkillDiv from "./SkillDiv";
 import { GoPlus } from "react-icons/go";
 import { PiDotsThreeVerticalBold } from "react-icons/pi";
+import Image from "next/image";
+import Project from "@/public/profile.png";
 
 const ProjectView = () => {
   return (
@@ -9,11 +11,7 @@ const ProjectView = () => {
       <div className="flex flex-row  items-center justify-between">
         <div className="flex flex-row gap-2 items-center justify-center">
           <div className="border w-20 h-20 border-gray-100 rounded-2xl p-2 overflow-hidden cursor-pointer">
-            <img
-              className="w-full h-full object-cover"
-              src="/profile.png"
-              alt=""
-            />
+          <Image objectFit="cover" src={Project} alt="" />
           </div>
           <div className="flex flex-col">
             <h2 className="text-xl font-semibold">Title of the Project</h2>

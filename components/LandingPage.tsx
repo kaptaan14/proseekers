@@ -4,6 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FiCode, FiTrendingUp, FiUsers } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
+import Image from "next/image";
+import Grow from "@/public/grow.png";
 
 const LandingPage = () => {
   return (
@@ -127,11 +129,7 @@ const LandingPage = () => {
             transition={{ duration: 1 }}
             className="flex justify-center sm:w-2/5 "
           >
-            <img
-              src="./grow.png" // Replace with your image URL
-              alt="Grow Together"
-              className="w-full rounded-lg "
-            />
+            <Image objectFit="cover" src={Grow} alt="" />
           </motion.div>
         </div>
       </section>

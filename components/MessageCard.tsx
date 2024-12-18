@@ -1,9 +1,7 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { RxCross2 } from "react-icons/rx";
-import { IoMdSend } from "react-icons/io";
+import Image from "next/image";
+import Profile from "@/public/profile.png";
 
 const MessageCard = () => {
   return (
@@ -11,7 +9,7 @@ const MessageCard = () => {
       <div className="flex flex-row gap-3 text-start items-center">
         {/* Project Image  */}
         <div className="w-20 h-20 border border-gray-100  rounded-2xl overflow-hidden">
-          <img className="w-20 h-20 object-cover" src="/profile.png" alt="" />
+          <Image objectFit="cover" src={Profile} alt="" />
         </div>
 
         {/* Title description  */}

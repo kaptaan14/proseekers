@@ -1,22 +1,18 @@
+import Image from "next/image";
 import React from "react";
-import { FaBookmark, FaRegBookmark } from "react-icons/fa6";
+import { FaRegBookmark } from "react-icons/fa6";
 import { MdOutlineReport } from "react-icons/md";
+import Project from "@/public/profile.png";
 
 const TradeCard = () => {
   return (
     <div className="border w-full flex flex-col gap-4 cursor-pointer bg-white border-gray-100 hover:shadow-xl transition-all duration-700 px-4 pt-4 pb-1 rounded-md border-b-[3px] ">
       <div className="flex flex-row justify-between">
         <div className="flex flex-row gap-3 text-start items-start">
-          {/* Project Image  */}
           <div className="border w-20 h-20 border-gray-100  rounded-2xl p-2 overflow-hidden">
-            <img
-              className="w-full h-full object-cover"
-              src="/profile.png"
-              alt=""
-            />
+            <Image objectFit="cover" src={Project} alt="" />
           </div>
 
-          {/* Title description  */}
           <div>
             <div className="flex flex-row items-start">
               <h1 className="font-bold text-xl overflow-hidden">Jhon Doe</h1>

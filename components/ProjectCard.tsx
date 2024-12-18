@@ -6,6 +6,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import ProjectView from "./ProjectView";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
+import Image from "next/image";
+import Project from "@/public/profile.png";
 
 const ProjectCard = () => {
   const [open, setOpen] = React.useState(false);
@@ -31,11 +33,7 @@ const ProjectCard = () => {
         >
           {/* Project Image */}
           <div className="border w-20 h-20 border-gray-100 rounded-2xl p-2 overflow-hidden cursor-pointer">
-            <img
-              className="w-full h-full object-cover"
-              src="/profile.png"
-              alt=""
-            />
+            <Image objectFit="cover" src={Project} alt="" />
           </div>
 
           {/* Title description */}
@@ -69,13 +67,17 @@ const ProjectCard = () => {
           <SkillDiv>NextJS</SkillDiv>
         </div>
 
-        <div className="flex flex-row justify-between py-2 px-4 my-2 border border-gray-100">
-          <div className="flex flex-row items-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-between py-2 px-4 my-2 border border-gray-100 hover:border-gray-200">
+          <div className="flex  flex-col sm:flex-row sm:items-center  sm:gap-4">
             <h1 className="font-semibold">Frontend Engineer Vella hai</h1>
-            <div className="flex flex-row items-center gap-1">
-              <p className="text-gray-200 text-sm">₹20000 - ₹50000</p>
-              <p className="text-gray-200 ">⦁</p>
-              <p className="text-gray-200 text-sm">No equity</p>
+            <div className="flex flex-row sm:items-center gap-1 mb-2 sm:mb-0">
+              <div className="flex flex-row items-center">
+                <p className="text-gray-200 text-sm text-start">
+                  ₹20000 - ₹50000
+                </p>
+                <p className="text-gray-200 ">⦁</p>
+                <p className="text-gray-200 text-sm">No equity</p>
+              </div>
             </div>
           </div>
           <div className="flex flex-row gap-3">
@@ -85,7 +87,10 @@ const ProjectCard = () => {
             >
               {saved ? "Save" : "Remove"}
             </button>
-            <Link href={'/projects/project/23'} className="border font-semibold hover:border-blue-200 hover:bg-blue-200 bg-black text-white rounded-md py-1 text-sm px-2">
+            <Link
+              href={"/projects/project/23"}
+              className="border w-full sm:max-w-none text-center font-semibold hover:border-blue-200 hover:bg-blue-200 bg-black text-white rounded-md py-1 text-sm px-2"
+            >
               Apply
             </Link>
           </div>
